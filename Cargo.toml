@@ -1,0 +1,18 @@
+[package]
+name = "libhermit_rs_bench"
+version = "0.1.0"
+authors = ["Jens Breitbart <jbreitbart@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.3"
+criterion-cycles-per-byte = "0.1.1"
+libc = "0.2"
+
+[[bench]]
+name = "benchmarks"
+harness = false
